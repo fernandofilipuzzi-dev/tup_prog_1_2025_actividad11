@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo3_con_vectores", "Ej
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo4_Busqueda_Ordenamiento", "Ejemplo4\Ejemplo4_Busqueda_Ordenamiento.csproj", "{97BE108C-9B44-440F-A6C1-7A64E586F831}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo5", "Ejemplo5\Ejemplo5.csproj", "{0A2C3092-6E91-4889-AEEE-C9EED225D629}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo5_Todo_clase_servicio", "Ejemplo5\Ejemplo5_Todo_clase_servicio.csproj", "{0A2C3092-6E91-4889-AEEE-C9EED225D629}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
