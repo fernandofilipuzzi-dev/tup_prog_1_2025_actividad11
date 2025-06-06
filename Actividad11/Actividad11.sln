@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo2_sin_vectores", "Ej
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo3_con_vectores", "Ejemplo3\Ejemplo3_con_vectores.csproj", "{2416B12C-BECE-4016-8BF6-BAE578E7DDE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo4_Busqueda_Ordenamiento", "Ejemplo4\Ejemplo4_Busqueda_Ordenamiento.csproj", "{97BE108C-9B44-440F-A6C1-7A64E586F831}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2416B12C-BECE-4016-8BF6-BAE578E7DDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2416B12C-BECE-4016-8BF6-BAE578E7DDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2416B12C-BECE-4016-8BF6-BAE578E7DDE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97BE108C-9B44-440F-A6C1-7A64E586F831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BE108C-9B44-440F-A6C1-7A64E586F831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BE108C-9B44-440F-A6C1-7A64E586F831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BE108C-9B44-440F-A6C1-7A64E586F831}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
