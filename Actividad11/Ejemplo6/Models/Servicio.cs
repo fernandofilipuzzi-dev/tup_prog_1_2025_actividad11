@@ -1,6 +1,6 @@
 ﻿
 
-namespace Ejemplo5.Models
+namespace Ejemplo6.Models
 {
     internal class Servicio
     {

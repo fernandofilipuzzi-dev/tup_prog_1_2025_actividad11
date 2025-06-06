@@ -1,6 +1,6 @@
-using Ejemplo5.Models;
+using Ejemplo6.Models;
 
-namespace Ejemplo5
+namespace Ejemplo6
 {
     public partial class FormPrincipal : Form
     {

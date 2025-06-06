@@ -1,4 +1,4 @@
-﻿namespace Ejemplo5
+﻿namespace Ejemplo6
 {
     partial class FormPrincipal
     {
