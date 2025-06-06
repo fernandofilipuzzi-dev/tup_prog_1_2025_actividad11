@@ -50,12 +50,12 @@ namespace Ejemplo4
             return idx;
         }
 
-        int Ordenar(double[] valores, int cantidad)
+        int Ordenar()
         { 
             int idx = -1;
-            for (int pivote = 0; pivote < cantidad-1; pivote++)
+            for (int pivote = 0; pivote < contador-1; pivote++)
             {
-                for (int comp = pivote+1; comp < cantidad; comp++)
+                for (int comp = pivote+1; comp < contador; comp++)
                 {
                     if (valores[pivote] > valores[comp])
                     {
@@ -92,7 +92,7 @@ namespace Ejemplo4
         private void btnListarOrdenado_Click(object sender, EventArgs e)
         {
 
-            Ordenar(valores, contador);
+            Ordenar();
                         
             tbResultado.Clear();
             for (int n = 0; n < contador; n++)
