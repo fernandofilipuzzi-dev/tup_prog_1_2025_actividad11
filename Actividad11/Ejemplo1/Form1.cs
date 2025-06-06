@@ -6,5 +6,10 @@ namespace Ejemplo1
         {
             InitializeComponent();
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            Text = "Hola mundo!";
+        }
     }
 }
