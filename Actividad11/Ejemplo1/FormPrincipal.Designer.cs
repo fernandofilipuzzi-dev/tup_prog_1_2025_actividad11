@@ -1,6 +1,6 @@
-﻿namespace Ejemplo2
+﻿namespace Ejemplo1
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,21 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnMostrar = new Button();
             SuspendLayout();
             // 
-            // Form1
+            // btnMostrar
+            // 
+            btnMostrar.Location = new Point(122, 71);
+            btnMostrar.Margin = new Padding(5, 6, 5, 6);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new Size(123, 45);
+            btnMostrar.TabIndex = 1;
+            btnMostrar.Text = "Mostrar";
+            btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.Click += btnMostrar_Click;
+            // 
+            // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(373, 183);
+            ClientSize = new Size(386, 200);
+            Controls.Add(btnMostrar);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Ejemplo 1. Introducción";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnMostrar;
     }
 }
