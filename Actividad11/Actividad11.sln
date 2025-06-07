@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo4_Busqueda_Ordenamie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo6_Todo_clase_servicio", "Ejemplo6\Ejemplo6_Todo_clase_servicio.csproj", "{0A2C3092-6E91-4889-AEEE-C9EED225D629}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo5_MayoresPromedio_MaximoyMinimo", "Ejemplo5\Ejemplo5_MayoresPromedio_MaximoyMinimo.csproj", "{C1156BC3-C7C1-4F87-8517-7DC286D65545}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0A2C3092-6E91-4889-AEEE-C9EED225D629}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A2C3092-6E91-4889-AEEE-C9EED225D629}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A2C3092-6E91-4889-AEEE-C9EED225D629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1156BC3-C7C1-4F87-8517-7DC286D65545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1156BC3-C7C1-4F87-8517-7DC286D65545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1156BC3-C7C1-4F87-8517-7DC286D65545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1156BC3-C7C1-4F87-8517-7DC286D65545}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
