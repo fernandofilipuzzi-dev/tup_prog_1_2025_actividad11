@@ -212,7 +212,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(427, 503);
+            ClientSize = new Size(489, 503);
             Controls.Add(btnMayoresAlPromedio);
             Controls.Add(label4);
             Controls.Add(lbMinimo);

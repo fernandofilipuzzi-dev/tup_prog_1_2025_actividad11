@@ -13,7 +13,7 @@ namespace Ejemplo6
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-           
+
             servicio.RegistrarValor(Convert.ToDouble(tbValor.Text));
 
             tbValor.Clear();
@@ -29,7 +29,7 @@ namespace Ejemplo6
 
         }
 
-        
+
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -59,5 +59,45 @@ namespace Ejemplo6
 
         }
 
+        private void btnMaximo_Click(object sender, EventArgs e)
+        {
+            int idxMaximo = servicio.CalcularMaximo();
+
+            if (idxMaximo > -1)
+            {
+                lbMaximo.Text = $"Máximo: {servicio.Valores[idxMaximo],5:f2} en la posición {idxMaximo}.";
+            }
+            else
+            {
+                lbMaximo.Text = "No hay valores registrados.";
+            }
+        }
+
+        private void btnMinimo_Click(object sender, EventArgs e)
+        {
+            int idxMinimo = servicio.CalcularMinimo();
+
+            if (idxMinimo > -1)
+            {
+                lbMinimo.Text = $"Mínimo: {servicio.Valores[idxMinimo],5:f2} en la posición {idxMinimo}.";
+            }
+            else
+            {
+                lbMaximo.Text = "No hay valores registrados.";
+            }
+        }
+
+        private void btnMayoresAlPromedio_Click(object sender, EventArgs e)
+        {
+            int cantidadMayores = 0;
+            int[] idxInidicesMayoresAlPromedio = servicio.CalcularMayoresAlPromedio(out cantidadMayores);
+
+            tbResultado.Clear();
+            for (int n = 0; n < cantidadMayores; n++)
+            {
+                int indice = idxInidicesMayoresAlPromedio[n];
+                tbResultado.Text += $"{servicio.Valores[indice],5:f2}";
+            }
+        }
     }
 }
