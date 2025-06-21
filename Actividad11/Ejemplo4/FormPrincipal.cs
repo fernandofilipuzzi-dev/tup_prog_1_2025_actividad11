@@ -54,7 +54,6 @@ namespace Ejemplo4
 
         void Ordenar()
         { 
-            int idx = -1;
             for (int pivote = 0; pivote < contador-1; pivote++)
             {
                 for (int comp = pivote+1; comp < contador; comp++)
