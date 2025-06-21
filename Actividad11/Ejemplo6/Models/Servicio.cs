@@ -4,25 +4,36 @@ namespace Ejemplo6.Models
 {
     internal class Servicio
     {
-        public double[] Valores = new double[100];
-        public int Contador = 0;
+        double[] valores = new double[100];
+        int contador = 0;
+
+        public int VerContador()
+        {
+            return contador;
+        }
+
+        public double VerValor(int idx)
+        {
+            if (idx >= 0 && idx < contador)
+                return valores[idx];
+            return 0;
+        }
 
         public void RegistrarValor(double valor)
         {
-            Valores[Contador] += valor;
-           Contador++;
-
+            valores[contador] = valor;
+            contador++;
         }
 
         public double CalcularPromedio()
         {
             double acumulador = 0;
-            for (int n = 0; n <Contador; n++)
+            for (int n = 0; n < contador; n++)
             {
-                acumulador += Valores[n];
+                acumulador += valores[n];
             }
 
-            double promedio = acumulador / Contador;
+            double promedio = acumulador / contador;
             return promedio;
         }
 
@@ -30,9 +41,9 @@ namespace Ejemplo6.Models
         {
             int idx = -1;
             int n = 0;
-            while (n < Contador && idx == -1)
+            while (n < contador && idx == -1)
             {
-                if (Valores[n] == valorBuscar)
+                if (valores[n] == valorBuscar)
                 {
                     idx = n;
                 }
@@ -41,21 +52,18 @@ namespace Ejemplo6.Models
             return idx;
         }
 
-        public int Ordenar()
+        public void Ordenar()
         {
-            int idx = -1;
-            for (int pivote = 0; pivote < Contador - 1; pivote++)
+            for (int pivote = 0; pivote < contador - 1; pivote++)
             {
-                for (int comp = pivote + 1; comp < Contador; comp++)
+                for (int comp = pivote + 1; comp < contador; comp++)
                 {
-                    if (Valores[pivote] > Valores[comp])
+                    if (valores[pivote] > valores[comp])
                     {
-                        Intercambiar(Valores, pivote, comp);
+                        Intercambiar(valores, pivote, comp);
                     }
                 }
             }
-
-            return idx;
         }
 
         void Intercambiar(double[] valores, int a, int b)
@@ -69,9 +77,9 @@ namespace Ejemplo6.Models
         {
             int idxMaximo = -1;
 
-            for (int n = 0; n < Contador; n++)
+            for (int n = 0; n < contador; n++)
             {
-                if (n == 0 || Valores[n] > Valores[idxMaximo])
+                if (n == 0 || valores[n] > valores[idxMaximo])
                     idxMaximo = n;
             }
 
@@ -81,9 +89,9 @@ namespace Ejemplo6.Models
         {
             int idxMinimo = -1;
 
-            for (int n = 0; n < Contador; n++)
+            for (int n = 0; n < contador; n++)
             {
-                if (n == 0 || Valores[n] < Valores[idxMinimo])
+                if (n == 0 || valores[n] < valores[idxMinimo])
                     idxMinimo = n;
             }
 
@@ -92,16 +100,16 @@ namespace Ejemplo6.Models
 
         public int[] CalcularMayoresAlPromedio(out int cantidadMayores)
         {
-            int[] idxMayores = new int[Contador];
+            int[] idxMayores = new int[contador];
 
             Ordenar();
 
             double promedio = CalcularPromedio();
 
             cantidadMayores = 0;
-            for (int n = 0; n < Contador; n++)
+            for (int n = 0; n < contador; n++)
             {
-                if (Valores[n] > promedio)
+                if (valores[n] > promedio)
                 {
                     idxMayores[cantidadMayores] = n;
                     cantidadMayores++;

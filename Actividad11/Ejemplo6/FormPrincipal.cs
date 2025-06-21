@@ -13,9 +13,7 @@ namespace Ejemplo6
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-
             servicio.RegistrarValor(Convert.ToDouble(tbValor.Text));
-
             tbValor.Clear();
         }
 
@@ -28,8 +26,6 @@ namespace Ejemplo6
 {promedio:f2}";
 
         }
-
-
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -48,13 +44,12 @@ namespace Ejemplo6
 
         private void btnListarOrdenado_Click(object sender, EventArgs e)
         {
-
             servicio.Ordenar();
 
             tbResultado.Clear();
-            for (int n = 0; n < servicio.Contador; n++)
+            for (int n = 0; n < servicio.VerContador(); n++)
             {
-                tbResultado.Text += $"{servicio.Valores[n],5:f2}";
+                tbResultado.Text += $"{servicio.VerValor(n),5:f2}";
             }
 
         }
@@ -65,7 +60,7 @@ namespace Ejemplo6
 
             if (idxMaximo > -1)
             {
-                lbMaximo.Text = $"Máximo: {servicio.Valores[idxMaximo],5:f2} en la posición {idxMaximo}.";
+                lbMaximo.Text = $"Máximo: {servicio.VerValor(idxMaximo),5:f2} en la posición {idxMaximo}.";
             }
             else
             {
@@ -79,7 +74,7 @@ namespace Ejemplo6
 
             if (idxMinimo > -1)
             {
-                lbMinimo.Text = $"Mínimo: {servicio.Valores[idxMinimo],5:f2} en la posición {idxMinimo}.";
+                lbMinimo.Text = $"Mínimo: {servicio.VerValor(idxMinimo),5:f2} en la posición {idxMinimo}.";
             }
             else
             {
@@ -96,7 +91,7 @@ namespace Ejemplo6
             for (int n = 0; n < cantidadMayores; n++)
             {
                 int indice = idxInidicesMayoresAlPromedio[n];
-                tbResultado.Text += $"{servicio.Valores[indice],5:f2}";
+                tbResultado.Text += $"{servicio.VerValor(indice),5:f2}";
             }
         }
     }
