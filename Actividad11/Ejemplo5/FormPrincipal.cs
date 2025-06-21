@@ -12,7 +12,7 @@ namespace Ejemplo5
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            valores[contador] += Convert.ToDouble(tbValor.Text);
+            valores[contador] = Convert.ToDouble(tbValor.Text);
             contador++;
 
             tbValor.Clear();

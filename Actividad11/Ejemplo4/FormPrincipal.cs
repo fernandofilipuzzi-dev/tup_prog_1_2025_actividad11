@@ -12,7 +12,7 @@ namespace Ejemplo4
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            valores[contador] += Convert.ToDouble(tbValor.Text);
+            valores[contador] = Convert.ToDouble(tbValor.Text);
             contador++;
 
             tbValor.Clear();
@@ -27,7 +27,9 @@ namespace Ejemplo4
                 acumulador += valores[n];
             }
 
-            double promedio = acumulador / contador;
+            double promedio = 0;
+            if (contador>0)
+                promedio = acumulador / contador;
 
             lbResultado.Text = $"{promedio:f2}";
             tbResultado.Text = $@"Promedio:
@@ -50,7 +52,7 @@ namespace Ejemplo4
             return idx;
         }
 
-        int Ordenar()
+        void Ordenar()
         { 
             int idx = -1;
             for (int pivote = 0; pivote < contador-1; pivote++)
@@ -63,8 +65,6 @@ namespace Ejemplo4
                     }
                 }
             }
-
-            return idx;
         }
 
         void Intercambiar(double[] valores, int a, int b)
