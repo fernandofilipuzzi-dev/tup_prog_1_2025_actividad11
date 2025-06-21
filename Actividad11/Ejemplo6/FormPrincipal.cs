@@ -24,7 +24,6 @@ namespace Ejemplo6
             lbResultado.Text = $"{promedio:f2}";
             tbResultado.Text = $@"Promedio:
 {promedio:f2}";
-
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -51,7 +50,6 @@ namespace Ejemplo6
             {
                 tbResultado.Text += $"{servicio.VerValor(n),5:f2}";
             }
-
         }
 
         private void btnMaximo_Click(object sender, EventArgs e)

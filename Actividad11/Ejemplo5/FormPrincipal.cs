@@ -149,7 +149,9 @@ namespace Ejemplo5
                 acumulador += valores[n];
             }
 
-            double promedio = acumulador / contador;
+            double promedio = 0;
+            if (contador>0)
+                promedio = acumulador / contador;
 
             tbResultado.Clear();
             for (int n = 0; n < contador; n++)

@@ -90,7 +90,6 @@ namespace Ejemplo4
 
         private void btnListarOrdenado_Click(object sender, EventArgs e)
         {
-
             Ordenar();
                         
             tbResultado.Clear();
@@ -98,7 +97,6 @@ namespace Ejemplo4
             {
                 tbResultado.Text += $"{valores[n],5:f2}";
             }
-
         }
     }
 }
